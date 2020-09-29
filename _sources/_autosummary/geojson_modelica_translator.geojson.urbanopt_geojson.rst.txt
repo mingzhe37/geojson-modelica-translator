@@ -1,0 +1,34 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/module.rst
+
+urbanopt\_geojson
+=================
+
+.. automodule:: geojson_modelica_translator.geojson.urbanopt_geojson
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+   
+      UrbanOptBuilding
+      UrbanOptGeoJson
+   
+   
+
+   
+   
+   
+
+
+

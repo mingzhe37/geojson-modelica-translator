@@ -1,0 +1,6 @@
+geojson\_modelica\_translator.cli.main
+======================================
+
+.. currentmodule:: geojson_modelica_translator.cli
+
+.. autofunction:: main

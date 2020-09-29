@@ -1,0 +1,29 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/class.rst
+
+Scaffold
+========
+
+.. currentmodule:: geojson_modelica_translator.scaffold
+
+.. autoclass:: Scaffold
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Scaffold.__init__
+      ~Scaffold.clear_or_create_path
+      ~Scaffold.create
+   
+   
+
+   
+   
+   

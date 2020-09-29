@@ -1,0 +1,27 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/class.rst
+
+UrbanOptBuilding
+================
+
+.. currentmodule:: geojson_modelica_translator.geojson.urbanopt_geojson
+
+.. autoclass:: UrbanOptBuilding
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~UrbanOptBuilding.__init__
+   
+   
+
+   
+   
+   

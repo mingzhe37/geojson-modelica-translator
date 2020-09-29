@@ -1,0 +1,6 @@
+geojson\_modelica\_translator.utils.copytree
+============================================
+
+.. currentmodule:: geojson_modelica_translator.utils
+
+.. autofunction:: copytree

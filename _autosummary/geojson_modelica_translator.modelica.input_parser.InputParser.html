@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InputParser &#8212; GeoJSON Modelica Translator v0.0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom_sphinx_styles.css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PackageParser" href="geojson_modelica_translator.modelica.input_parser.PackageParser.html" />
+    <link rel="prev" title="input_parser" href="geojson_modelica_translator.modelica.input_parser.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="geojson_modelica_translator.modelica.input_parser.PackageParser.html" title="PackageParser"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="geojson_modelica_translator.modelica.input_parser.html" title="input_parser"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">GeoJSON Modelica Translator v0.0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="geojson_modelica_translator.html" >geojson_modelica_translator</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="geojson_modelica_translator.modelica.html" >modelica</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="geojson_modelica_translator.modelica.input_parser.html" accesskey="U">input_parser</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">InputParser</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="inputparser">
+<h1>InputParser<a class="headerlink" href="#inputparser" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="geojson_modelica_translator.modelica.input_parser.InputParser">
+<em class="property">class </em><code class="sig-prename descclassname">geojson_modelica_translator.modelica.input_parser.</code><code class="sig-name descname">InputParser</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">modelica_filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.InputParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class to read in Modelica files (.mo) and provide basic operations.</p>
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.InputParser.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">modelica_filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.InputParser.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.InputParser.__init__" title="geojson_modelica_translator.modelica.input_parser.InputParser.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(modelica_filename)</p></td>
+<td><p>Initialize self.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.InputParser.add_connect" title="geojson_modelica_translator.modelica.input_parser.InputParser.add_connect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_connect</span></code></a>(a, b, annotation)</p></td>
+<td><p>Add a new connection of port a to port b.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.InputParser.add_model_object" title="geojson_modelica_translator.modelica.input_parser.InputParser.add_model_object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_model_object</span></code></a>(model_name, model_instance, …)</p></td>
+<td><p>Add a new model object to the model</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.InputParser.add_parameter" title="geojson_modelica_translator.modelica.input_parser.InputParser.add_parameter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_parameter</span></code></a>(var_type, var_name, value, …)</p></td>
+<td><p>Add a new parameter.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.InputParser.find_connect" title="geojson_modelica_translator.modelica.input_parser.InputParser.find_connect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">find_connect</span></code></a>(port_a, port_b)</p></td>
+<td><p>Find an existing connection that has port_a and/or port_b.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.InputParser.find_model_object" title="geojson_modelica_translator.modelica.input_parser.InputParser.find_model_object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">find_model_object</span></code></a>(obj_name)</p></td>
+<td><p>Find a model object in the list of parsed objects :param obj_name: string, name (including the instance) :return: list, index and string of object</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">init_vars</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_mo</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.InputParser.reload" title="geojson_modelica_translator.modelica.input_parser.InputParser.reload"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reload</span></code></a>()</p></td>
+<td><p>Reparse the data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.InputParser.remove_connect_string" title="geojson_modelica_translator.modelica.input_parser.InputParser.remove_connect_string"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove_connect_string</span></code></a>(a, b)</p></td>
+<td><p>Remove a connection string that matches the a, b.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.InputParser.remove_object" title="geojson_modelica_translator.modelica.input_parser.InputParser.remove_object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove_object</span></code></a>(obj_name)</p></td>
+<td><p>Remove an object by a name.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.InputParser.replace_connect_string" title="geojson_modelica_translator.modelica.input_parser.InputParser.replace_connect_string"><code class="xref py py-obj docutils literal notranslate"><span class="pre">replace_connect_string</span></code></a>(a, b, new_a, new_b[, …])</p></td>
+<td><p>Replace content of the connect string with new_a and/or new_b</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.InputParser.replace_model_string" title="geojson_modelica_translator.modelica.input_parser.InputParser.replace_model_string"><code class="xref py py-obj docutils literal notranslate"><span class="pre">replace_model_string</span></code></a>(model_name, …)</p></td>
+<td><p>Go through the models and find the model_name with a model_instance and change the value in the field to the new_value.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.InputParser.replace_within_string" title="geojson_modelica_translator.modelica.input_parser.InputParser.replace_within_string"><code class="xref py py-obj docutils literal notranslate"><span class="pre">replace_within_string</span></code></a>(new_string)</p></td>
+<td><p>Replacement of the path portion of the within string</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.InputParser.save" title="geojson_modelica_translator.modelica.input_parser.InputParser.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code></a>()</p></td>
+<td><p>Save the resulting file to the same file from which it was initialized</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.InputParser.save_as" title="geojson_modelica_translator.modelica.input_parser.InputParser.save_as"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save_as</span></code></a>(new_filename)</p></td>
+<td><p>Save the resulting file with a new filename</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.InputParser.serialize" title="geojson_modelica_translator.modelica.input_parser.InputParser.serialize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">serialize</span></code></a>()</p></td>
+<td><p>Serialize the modelica object to a string with line feeds</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.InputParser.add_connect">
+<code class="sig-name descname">add_connect</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em>, <em class="sig-param"><span class="n">annotation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.InputParser.add_connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a new connection of port a to port b. The annotation will be appended on a new line.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> – string, port a</p></li>
+<li><p><strong>b</strong> – string, port b</p></li>
+<li><p><strong>annotation</strong> – string, description</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.InputParser.add_model_object">
+<code class="sig-name descname">add_model_object</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model_name</span></em>, <em class="sig-param"><span class="n">model_instance</span></em>, <em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.InputParser.add_model_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a new model object to the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model_name</strong> – string</p></li>
+<li><p><strong>model_instance</strong> – string</p></li>
+<li><p><strong>data</strong> – list of strings</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.InputParser.add_parameter">
+<code class="sig-name descname">add_parameter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">var_type</span></em>, <em class="sig-param"><span class="n">var_name</span></em>, <em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">description</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.InputParser.add_parameter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a new parameter. Will be prepended to the top of the models list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>var_type</strong> – string, type of Modelica variable, Real, Integer, String, Modelica.SIunits.Area, etc.</p></li>
+<li><p><strong>var_name</strong> – string, name of the variable. Note that this does not check for conflicts.</p></li>
+<li><p><strong>value</strong> – variant, value to set the variable name to.</p></li>
+<li><p><strong>description</strong> – string, description of the parameter</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.InputParser.find_connect">
+<code class="sig-name descname">find_connect</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">port_a</span></em>, <em class="sig-param"><span class="n">port_b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.InputParser.find_connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find an existing connection that has port_a and/or port_b. If there are more than one, then it will only
+return the first.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>port_a</strong> – </p></li>
+<li><p><strong>port_b</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.InputParser.find_model_object">
+<code class="sig-name descname">find_model_object</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.InputParser.find_model_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find a model object in the list of parsed objects
+:param obj_name: string, name (including the instance)
+:return: list, index and string of object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.InputParser.reload">
+<code class="sig-name descname">reload</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.InputParser.reload" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reparse the data. This will remove any unsaved changes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.InputParser.remove_connect_string">
+<code class="sig-name descname">remove_connect_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.InputParser.remove_connect_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove a connection string that matches the a, b.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> – string, existing port a</p></li>
+<li><p><strong>b</strong> – string, existing port b</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.InputParser.remove_object">
+<code class="sig-name descname">remove_object</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.InputParser.remove_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove an object by a name. Can be any part of the object name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>obj_name</strong> – string, object name to match</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.InputParser.replace_connect_string">
+<code class="sig-name descname">replace_connect_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em>, <em class="sig-param"><span class="n">new_a</span></em>, <em class="sig-param"><span class="n">new_b</span></em>, <em class="sig-param"><span class="n">replace_all</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.InputParser.replace_connect_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replace content of the connect string with new_a and/or new_b</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> – string, existing port a</p></li>
+<li><p><strong>b</strong> – string, existing port b</p></li>
+<li><p><strong>new_a</strong> – string, new port (or none)</p></li>
+<li><p><strong>new_b</strong> – string, new port b (or none</p></li>
+<li><p><strong>replace_all</strong> – boolean, allow replacemnt of all strings</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.InputParser.replace_model_string">
+<code class="sig-name descname">replace_model_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model_name</span></em>, <em class="sig-param"><span class="n">model_instance</span></em>, <em class="sig-param"><span class="n">old_string</span></em>, <em class="sig-param"><span class="n">new_string</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.InputParser.replace_model_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Go through the models and find the model_name with a model_instance and change the value in the field to
+the new_value. This will replace the entire value of the model field.</p>
+<p>This will not work with arrays or lists (e.g., {…}, […])</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model_name</strong> – string, name of the model</p></li>
+<li><p><strong>model_instance</strong> – string, instance of the model</p></li>
+<li><p><strong>old_string</strong> – string, name of the old string to replace</p></li>
+<li><p><strong>new_string</strong> – string, the new string</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.InputParser.replace_within_string">
+<code class="sig-name descname">replace_within_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_string</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.InputParser.replace_within_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replacement of the path portion of the within string</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>new_string</strong> – string, what to replace the existing within string with.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.InputParser.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.InputParser.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the resulting file to the same file from which it was initialized</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.InputParser.save_as">
+<code class="sig-name descname">save_as</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.InputParser.save_as" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the resulting file with a new filename</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>new_filename</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.InputParser.serialize">
+<code class="sig-name descname">serialize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.InputParser.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the modelica object to a string with line feeds</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="geojson_modelica_translator.modelica.input_parser.html"
+                        title="previous chapter">input_parser</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="geojson_modelica_translator.modelica.input_parser.PackageParser.html"
+                        title="next chapter">PackageParser</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_autosummary/geojson_modelica_translator.modelica.input_parser.InputParser.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="geojson_modelica_translator.modelica.input_parser.PackageParser.html" title="PackageParser"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="geojson_modelica_translator.modelica.input_parser.html" title="input_parser"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">GeoJSON Modelica Translator v0.0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="geojson_modelica_translator.html" >geojson_modelica_translator</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="geojson_modelica_translator.modelica.html" >modelica</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="geojson_modelica_translator.modelica.input_parser.html" >input_parser</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">InputParser</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2020, Alliance for Sustainable Energy, LLC.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

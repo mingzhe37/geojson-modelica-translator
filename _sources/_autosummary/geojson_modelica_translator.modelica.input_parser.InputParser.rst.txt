@@ -1,0 +1,43 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/class.rst
+
+InputParser
+===========
+
+.. currentmodule:: geojson_modelica_translator.modelica.input_parser
+
+.. autoclass:: InputParser
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~InputParser.__init__
+      ~InputParser.add_connect
+      ~InputParser.add_model_object
+      ~InputParser.add_parameter
+      ~InputParser.find_connect
+      ~InputParser.find_model_object
+      ~InputParser.init_vars
+      ~InputParser.parse_mo
+      ~InputParser.reload
+      ~InputParser.remove_connect_string
+      ~InputParser.remove_object
+      ~InputParser.replace_connect_string
+      ~InputParser.replace_model_string
+      ~InputParser.replace_within_string
+      ~InputParser.save
+      ~InputParser.save_as
+      ~InputParser.serialize
+   
+   
+
+   
+   
+   

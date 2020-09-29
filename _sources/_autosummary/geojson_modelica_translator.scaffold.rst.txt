@@ -1,0 +1,33 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/module.rst
+
+scaffold
+========
+
+.. automodule:: geojson_modelica_translator.scaffold
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+   
+      Scaffold
+   
+   
+
+   
+   
+   
+
+
+

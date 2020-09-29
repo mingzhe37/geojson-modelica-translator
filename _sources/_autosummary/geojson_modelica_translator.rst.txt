@@ -1,0 +1,40 @@
+﻿..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/module.rst
+
+geojson\_modelica\_translator
+=============================
+
+.. automodule:: geojson_modelica_translator
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   geojson_modelica_translator.cli
+   geojson_modelica_translator.geojson
+   geojson_modelica_translator.geojson_modelica_translator
+   geojson_modelica_translator.model_connectors
+   geojson_modelica_translator.modelica
+   geojson_modelica_translator.scaffold
+   geojson_modelica_translator.utils
+

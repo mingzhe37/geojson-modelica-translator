@@ -1,0 +1,33 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/class.rst
+
+SpawnConnector
+==============
+
+.. currentmodule:: geojson_modelica_translator.model_connectors.spawn
+
+.. autoclass:: SpawnConnector
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~SpawnConnector.__init__
+      ~SpawnConnector.add_building
+      ~SpawnConnector.copy_required_mo_files
+      ~SpawnConnector.modelica_path
+      ~SpawnConnector.post_process
+      ~SpawnConnector.run_template
+      ~SpawnConnector.to_modelica
+   
+   
+
+   
+   
+   

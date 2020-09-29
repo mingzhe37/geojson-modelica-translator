@@ -1,0 +1,28 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/class.rst
+
+CSVModelica
+===========
+
+.. currentmodule:: geojson_modelica_translator.modelica.csv_modelica
+
+.. autoclass:: CSVModelica
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~CSVModelica.__init__
+      ~CSVModelica.timeseries_to_modelica_data
+   
+   
+
+   
+   
+   

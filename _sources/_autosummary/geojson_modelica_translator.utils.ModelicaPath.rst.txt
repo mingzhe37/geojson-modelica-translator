@@ -1,0 +1,39 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/class.rst
+
+ModelicaPath
+============
+
+.. currentmodule:: geojson_modelica_translator.utils
+
+.. autoclass:: ModelicaPath
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ModelicaPath.__init__
+      ~ModelicaPath.clear_or_create_path
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ModelicaPath.files_dir
+      ~ModelicaPath.files_relative_dir
+      ~ModelicaPath.resources_dir
+      ~ModelicaPath.resources_relative_dir
+      ~ModelicaPath.scripts_dir
+      ~ModelicaPath.scripts_relative_dir
+   
+   

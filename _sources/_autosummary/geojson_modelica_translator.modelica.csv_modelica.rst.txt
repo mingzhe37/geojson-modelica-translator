@@ -1,0 +1,33 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/module.rst
+
+csv\_modelica
+=============
+
+.. automodule:: geojson_modelica_translator.modelica.csv_modelica
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+   
+      CSVModelica
+   
+   
+
+   
+   
+   
+
+
+

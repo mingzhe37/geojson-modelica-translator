@@ -1,0 +1,42 @@
+﻿..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/module.rst
+
+model\_connectors
+=================
+
+.. automodule:: geojson_modelica_translator.model_connectors
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   geojson_modelica_translator.model_connectors.base
+   geojson_modelica_translator.model_connectors.district_system
+   geojson_modelica_translator.model_connectors.spawn
+   geojson_modelica_translator.model_connectors.spawn_ets_coupling
+   geojson_modelica_translator.model_connectors.teaser
+   geojson_modelica_translator.model_connectors.teaser_ets_coupling
+   geojson_modelica_translator.model_connectors.time_series
+   geojson_modelica_translator.model_connectors.time_series_ets_coupling
+   geojson_modelica_translator.model_connectors.time_series_mft_ets_coupling
+

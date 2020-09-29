@@ -1,0 +1,6 @@
+geojson\_modelica\_translator.cli.parse\_args
+=============================================
+
+.. currentmodule:: geojson_modelica_translator.cli
+
+.. autofunction:: parse_args

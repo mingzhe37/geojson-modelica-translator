@@ -1,0 +1,33 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/class.rst
+
+DistrictSystemConnector
+=======================
+
+.. currentmodule:: geojson_modelica_translator.model_connectors.district_system
+
+.. autoclass:: DistrictSystemConnector
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~DistrictSystemConnector.__init__
+      ~DistrictSystemConnector.add_building
+      ~DistrictSystemConnector.copy_required_mo_files
+      ~DistrictSystemConnector.modelica_path
+      ~DistrictSystemConnector.post_process
+      ~DistrictSystemConnector.run_template
+      ~DistrictSystemConnector.to_modelica
+   
+   
+
+   
+   
+   

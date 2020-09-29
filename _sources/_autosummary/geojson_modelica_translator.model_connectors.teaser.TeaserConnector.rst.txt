@@ -1,0 +1,35 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/class.rst
+
+TeaserConnector
+===============
+
+.. currentmodule:: geojson_modelica_translator.model_connectors.teaser
+
+.. autoclass:: TeaserConnector
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~TeaserConnector.__init__
+      ~TeaserConnector.add_building
+      ~TeaserConnector.copy_required_mo_files
+      ~TeaserConnector.lookup_building_type
+      ~TeaserConnector.modelica_path
+      ~TeaserConnector.post_process
+      ~TeaserConnector.process_building
+      ~TeaserConnector.run_template
+      ~TeaserConnector.to_modelica
+   
+   
+
+   
+   
+   

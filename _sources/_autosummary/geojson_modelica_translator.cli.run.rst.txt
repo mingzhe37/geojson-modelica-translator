@@ -1,0 +1,6 @@
+geojson\_modelica\_translator.cli.run
+=====================================
+
+.. currentmodule:: geojson_modelica_translator.cli
+
+.. autofunction:: run

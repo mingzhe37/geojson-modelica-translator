@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base &#8212; GeoJSON Modelica Translator v0.0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom_sphinx_styles.css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="district_system" href="geojson_modelica_translator.model_connectors.district_system.html" />
+    <link rel="prev" title="base" href="geojson_modelica_translator.model_connectors.base.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="geojson_modelica_translator.model_connectors.district_system.html" title="district_system"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="geojson_modelica_translator.model_connectors.base.html" title="base"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">GeoJSON Modelica Translator v0.0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="geojson_modelica_translator.html" >geojson_modelica_translator</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="geojson_modelica_translator.model_connectors.html" >model_connectors</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="geojson_modelica_translator.model_connectors.base.html" accesskey="U">base</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Base</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="base">
+<h1>Base<a class="headerlink" href="#base" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="geojson_modelica_translator.model_connectors.base.Base">
+<em class="property">class </em><code class="sig-prename descclassname">geojson_modelica_translator.model_connectors.base.</code><code class="sig-name descname">Base</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">system_parameters</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.model_connectors.base.Base" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class of the model connectors. The connectors can utilize various methods to create a building (or other
+feature) to a detailed Modelica connection. For example, a simple RC model (using TEASER), a ROM, CSV file, etc.</p>
+<dl class="py method">
+<dt id="geojson_modelica_translator.model_connectors.base.Base.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">system_parameters</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.model_connectors.base.Base.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base initializer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>system_parameters</strong> – SystemParameters object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.model_connectors.base.Base.__init__" title="geojson_modelica_translator.model_connectors.base.Base.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(system_parameters)</p></td>
+<td><p>Base initializer</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.model_connectors.base.Base.add_building" title="geojson_modelica_translator.model_connectors.base.Base.add_building"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_building</span></code></a>(urbanopt_building[, mapper])</p></td>
+<td><p>Add building to the translator.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.model_connectors.base.Base.copy_required_mo_files" title="geojson_modelica_translator.model_connectors.base.Base.copy_required_mo_files"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy_required_mo_files</span></code></a>(dest_folder[, within])</p></td>
+<td><p>Copy any required_mo_files to the destination and update the within clause if defined</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.model_connectors.base.Base.modelica_path" title="geojson_modelica_translator.model_connectors.base.Base.modelica_path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">modelica_path</span></code></a>(filename)</p></td>
+<td><p>Write a modelica path string for a given filename</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.model_connectors.base.Base.run_template" title="geojson_modelica_translator.model_connectors.base.Base.run_template"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run_template</span></code></a>(template, save_file_name, **kwargs)</p></td>
+<td><p>Create an instance from a jinja template</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt id="geojson_modelica_translator.model_connectors.base.Base.add_building">
+<code class="sig-name descname">add_building</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">urbanopt_building</span></em>, <em class="sig-param"><span class="n">mapper</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.model_connectors.base.Base.add_building" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add building to the translator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>urbanopt_building</strong> – an urbanopt_building</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.model_connectors.base.Base.copy_required_mo_files">
+<code class="sig-name descname">copy_required_mo_files</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dest_folder</span></em>, <em class="sig-param"><span class="n">within</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.model_connectors.base.Base.copy_required_mo_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy any required_mo_files to the destination and update the within clause if defined</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dest_folder</strong> – String, folder to copy the resulting MO files into.</p></li>
+<li><p><strong>within</strong> – String, within clause to be replaced in the .mo file. Note that the original MO file needs to</p></li>
+</ul>
+</dd>
+</dl>
+<p>have a within clause defined to be replaced.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.model_connectors.base.Base.modelica_path">
+<code class="sig-name descname">modelica_path</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.model_connectors.base.Base.modelica_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write a modelica path string for a given filename</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.model_connectors.base.Base.run_template">
+<code class="sig-name descname">run_template</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">template</span></em>, <em class="sig-param"><span class="n">save_file_name</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.model_connectors.base.Base.run_template" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an instance from a jinja template</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="geojson_modelica_translator.model_connectors.base.html"
+                        title="previous chapter">base</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="geojson_modelica_translator.model_connectors.district_system.html"
+                        title="next chapter">district_system</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_autosummary/geojson_modelica_translator.model_connectors.base.Base.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="geojson_modelica_translator.model_connectors.district_system.html" title="district_system"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="geojson_modelica_translator.model_connectors.base.html" title="base"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">GeoJSON Modelica Translator v0.0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="geojson_modelica_translator.html" >geojson_modelica_translator</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="geojson_modelica_translator.model_connectors.html" >model_connectors</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="geojson_modelica_translator.model_connectors.base.html" >base</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Base</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2020, Alliance for Sustainable Energy, LLC.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

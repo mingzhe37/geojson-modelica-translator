@@ -1,0 +1,30 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/class.rst
+
+ModelicaRunner
+==============
+
+.. currentmodule:: geojson_modelica_translator.modelica.modelica_runner
+
+.. autoclass:: ModelicaRunner
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ModelicaRunner.__init__
+      ~ModelicaRunner.cleanup_path
+      ~ModelicaRunner.move_results
+      ~ModelicaRunner.run_in_docker
+   
+   
+
+   
+   
+   

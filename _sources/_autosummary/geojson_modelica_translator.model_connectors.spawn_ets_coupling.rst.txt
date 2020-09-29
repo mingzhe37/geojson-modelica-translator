@@ -1,0 +1,33 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/module.rst
+
+spawn\_ets\_coupling
+====================
+
+.. automodule:: geojson_modelica_translator.model_connectors.spawn_ets_coupling
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+   
+      SpawnConnectorETS
+   
+   
+
+   
+   
+   
+
+
+

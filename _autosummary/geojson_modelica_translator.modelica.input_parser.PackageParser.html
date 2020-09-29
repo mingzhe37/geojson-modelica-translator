@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PackageParser &#8212; GeoJSON Modelica Translator v0.0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom_sphinx_styles.css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="lib" href="geojson_modelica_translator.modelica.lib.html" />
+    <link rel="prev" title="InputParser" href="geojson_modelica_translator.modelica.input_parser.InputParser.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="geojson_modelica_translator.modelica.lib.html" title="lib"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="geojson_modelica_translator.modelica.input_parser.InputParser.html" title="InputParser"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">GeoJSON Modelica Translator v0.0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="geojson_modelica_translator.html" >geojson_modelica_translator</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="geojson_modelica_translator.modelica.html" >modelica</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="geojson_modelica_translator.modelica.input_parser.html" accesskey="U">input_parser</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">PackageParser</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="packageparser">
+<h1>PackageParser<a class="headerlink" href="#packageparser" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="geojson_modelica_translator.modelica.input_parser.PackageParser">
+<em class="property">class </em><code class="sig-prename descclassname">geojson_modelica_translator.modelica.input_parser.</code><code class="sig-name descname">PackageParser</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.PackageParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class to read and modify the package.mo and the package.order file</p>
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.PackageParser.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.PackageParser.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an instance to manage the package.mo/order file. If no path is provided then the user
+must add in their own package and order data. Or the user can load from the new_from_template
+class method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path</strong> – string, path to where the package.mo and package.order reside.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.PackageParser.__init__" title="geojson_modelica_translator.modelica.input_parser.PackageParser.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>([path])</p></td>
+<td><p>Create an instance to manage the package.mo/order file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.PackageParser.add_model" title="geojson_modelica_translator.modelica.input_parser.PackageParser.add_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_model</span></code></a>(new_model_name[, insert_at])</p></td>
+<td><p>Insert a new model into the package&gt; Note that the order_data is stored as a string right now, so there is a bit of a hack to get this to work correctly.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.PackageParser.load" title="geojson_modelica_translator.modelica.input_parser.PackageParser.load"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load</span></code></a>()</p></td>
+<td><p>Load the package.mo and package.mo data from the member variable path</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.PackageParser.new_from_template" title="geojson_modelica_translator.modelica.input_parser.PackageParser.new_from_template"><code class="xref py py-obj docutils literal notranslate"><span class="pre">new_from_template</span></code></a>(path, name, order[, within])</p></td>
+<td><p>Create new package data based on the package.mo template.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.PackageParser.rename_model" title="geojson_modelica_translator.modelica.input_parser.PackageParser.rename_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rename_model</span></code></a>(old_model, new_model)</p></td>
+<td><p>Rename the model name in the package.order file</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.PackageParser.save" title="geojson_modelica_translator.modelica.input_parser.PackageParser.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code></a>()</p></td>
+<td><p>Save the updated files to the same location</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.modelica.input_parser.PackageParser.order" title="geojson_modelica_translator.modelica.input_parser.PackageParser.order"><code class="xref py py-obj docutils literal notranslate"><span class="pre">order</span></code></a></p></td>
+<td><p>Return the order of the packages from the package.order file</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.PackageParser.add_model">
+<code class="sig-name descname">add_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_model_name</span></em>, <em class="sig-param"><span class="n">insert_at</span><span class="o">=</span><span class="default_value">- 1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.PackageParser.add_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert a new model into the package&gt; Note that the order_data is stored as a string right now,
+so there is a bit of a hack to get this to work correctly.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>new_model_name</strong> – string, name of the new model to add to the package order.</p></li>
+<li><p><strong>insert_at</strong> – int, location to insert package, if 0 at beginning, -1 at end</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.PackageParser.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.PackageParser.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the package.mo and package.mo data from the member variable path</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.PackageParser.new_from_template">
+<em class="property">classmethod </em><code class="sig-name descname">new_from_template</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em>, <em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">order</span></em>, <em class="sig-param"><span class="n">within</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.PackageParser.new_from_template" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create new package data based on the package.mo template. If within is not specified, then it is
+assumed that this is a top level package and will load from the package_base template.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> – string, the path where the resulting files will be saved to.</p></li>
+<li><p><strong>name</strong> – string, the name of the model</p></li>
+<li><p><strong>order</strong> – list, ordered list of which models will be loaded (saved to package.order)</p></li>
+<li><p><strong>within</strong> – string, (optional), name where this package is within.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.PackageParser.order">
+<em class="property">property </em><code class="sig-name descname">order</code><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.PackageParser.order" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the order of the packages from the package.order file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list, list of the loaded models in the package.order file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.PackageParser.rename_model">
+<code class="sig-name descname">rename_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">old_model</span></em>, <em class="sig-param"><span class="n">new_model</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.PackageParser.rename_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rename the model name in the package.order file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>old_model</strong> – string, existing name</p></li>
+<li><p><strong>new_model</strong> – string, new name</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.modelica.input_parser.PackageParser.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.modelica.input_parser.PackageParser.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the updated files to the same location</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="geojson_modelica_translator.modelica.input_parser.InputParser.html"
+                        title="previous chapter">InputParser</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="geojson_modelica_translator.modelica.lib.html"
+                        title="next chapter">lib</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_autosummary/geojson_modelica_translator.modelica.input_parser.PackageParser.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="geojson_modelica_translator.modelica.lib.html" title="lib"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="geojson_modelica_translator.modelica.input_parser.InputParser.html" title="InputParser"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">GeoJSON Modelica Translator v0.0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="geojson_modelica_translator.html" >geojson_modelica_translator</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="geojson_modelica_translator.modelica.html" >modelica</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="geojson_modelica_translator.modelica.input_parser.html" >input_parser</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">PackageParser</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2020, Alliance for Sustainable Energy, LLC.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/class.rst
+
+TimeSeriesConnectorMFTETS
+=========================
+
+.. currentmodule:: geojson_modelica_translator.model_connectors.time_series_mft_ets_coupling
+
+.. autoclass:: TimeSeriesConnectorMFTETS
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~TimeSeriesConnectorMFTETS.__init__
+      ~TimeSeriesConnectorMFTETS.add_building
+      ~TimeSeriesConnectorMFTETS.copy_required_mo_files
+      ~TimeSeriesConnectorMFTETS.modelica_path
+      ~TimeSeriesConnectorMFTETS.post_process
+      ~TimeSeriesConnectorMFTETS.run_template
+      ~TimeSeriesConnectorMFTETS.to_modelica
+   
+   
+
+   
+   
+   

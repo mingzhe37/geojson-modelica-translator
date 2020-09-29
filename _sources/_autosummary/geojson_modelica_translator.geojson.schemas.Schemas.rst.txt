@@ -1,0 +1,29 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/class.rst
+
+Schemas
+=======
+
+.. currentmodule:: geojson_modelica_translator.geojson.schemas
+
+.. autoclass:: Schemas
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Schemas.__init__
+      ~Schemas.retrieve
+      ~Schemas.validate
+   
+   
+
+   
+   
+   

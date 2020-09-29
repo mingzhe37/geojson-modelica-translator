@@ -1,0 +1,38 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/class.rst
+
+PackageParser
+=============
+
+.. currentmodule:: geojson_modelica_translator.modelica.input_parser
+
+.. autoclass:: PackageParser
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~PackageParser.__init__
+      ~PackageParser.add_model
+      ~PackageParser.load
+      ~PackageParser.new_from_template
+      ~PackageParser.rename_model
+      ~PackageParser.save
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~PackageParser.order
+   
+   

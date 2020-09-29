@@ -1,0 +1,34 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/module.rst
+
+input\_parser
+=============
+
+.. automodule:: geojson_modelica_translator.modelica.input_parser
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+   
+      InputParser
+      PackageParser
+   
+   
+
+   
+   
+   
+
+
+

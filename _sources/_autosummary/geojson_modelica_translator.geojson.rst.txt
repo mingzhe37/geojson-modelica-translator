@@ -1,0 +1,35 @@
+﻿..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/module.rst
+
+geojson
+=======
+
+.. automodule:: geojson_modelica_translator.geojson
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   geojson_modelica_translator.geojson.schemas
+   geojson_modelica_translator.geojson.urbanopt_geojson
+

@@ -1,0 +1,33 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/module.rst
+
+schemas
+=======
+
+.. automodule:: geojson_modelica_translator.geojson.schemas
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+   
+      Schemas
+   
+   
+
+   
+   
+   
+
+
+
