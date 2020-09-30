@@ -80,7 +80,7 @@
 <td><p>Add building to the translator.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.copy_required_mo_files" title="geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.copy_required_mo_files"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy_required_mo_files</span></code></a>(dest_folder[, within])</p></td>
-<td><p>Copy any required_mo_files to the destination and update the within clause if defined</p></td>
+<td><p>Copy any required_mo_files to the destination and update the within clause if defined.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.modelica_path" title="geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.modelica_path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">modelica_path</span></code></a>(filename)</p></td>
 <td><p>Write a modelica path string for a given filename</p></td>
@@ -88,8 +88,8 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.post_process" title="geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.post_process"><code class="xref py py-obj docutils literal notranslate"><span class="pre">post_process</span></code></a>(scaffold, building_names[, …])</p></td>
 <td><p>Cleanup the export of Spawn files into a format suitable for the district-based analysis.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.run_template" title="geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.run_template"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run_template</span></code></a>(template, save_file_name, **kwargs)</p></td>
-<td><p>Create an instance from a jinja template</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.run_template" title="geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.run_template"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run_template</span></code></a>(template, save_file_name[, …])</p></td>
+<td><p>Helper method to create the file from Jinja2’s templating framework.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.to_modelica" title="geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.to_modelica"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_modelica</span></code></a>(scaffold[, keep_original_models])</p></td>
 <td><p>Create spawn models based on the data in the buildings and geojsons</p></td>
@@ -110,7 +110,9 @@
 <dl class="py method">
 <dt id="geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.copy_required_mo_files">
 <code class="sig-name descname">copy_required_mo_files</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dest_folder</span></em>, <em class="sig-param"><span class="n">within</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.copy_required_mo_files" title="Permalink to this definition">¶</a></dt>
-<dd><p>Copy any required_mo_files to the destination and update the within clause if defined</p>
+<dd><p>Copy any required_mo_files to the destination and update the within clause if defined. The required mo
+files need to be added as full paths to the required_mo_files member variable in the connectors derived
+classes.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -154,8 +156,21 @@ the following:</p>
 
 <dl class="py method">
 <dt id="geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.run_template">
-<code class="sig-name descname">run_template</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">template</span></em>, <em class="sig-param"><span class="n">save_file_name</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.run_template" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create an instance from a jinja template</p>
+<code class="sig-name descname">run_template</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">template</span></em>, <em class="sig-param"><span class="n">save_file_name</span></em>, <em class="sig-param"><span class="n">do_not_add_to_list</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.model_connectors.spawn_ets_coupling.SpawnConnectorETS.run_template" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper method to create the file from Jinja2’s templating framework.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>template</strong> – object, Jinja template from the <cite>template_env.get_template()</cite> command.</p></li>
+<li><p><strong>save_file_name</strong> – string, fully qualified path to save the rendered template to.</p></li>
+<li><p><strong>do_not_add_to_list</strong> – boolean, set to true if you do not want the file to be added to the package.order</p></li>
+<li><p><strong>kwargs</strong> – These are the arguments that need to be passed to the template.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">

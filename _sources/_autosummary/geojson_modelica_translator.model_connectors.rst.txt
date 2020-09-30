@@ -1,4 +1,4 @@
-﻿..
+..
     This file was copied from sphinx/ext/autosummary/templates/autosummary/module.rst
 
 model\_connectors
@@ -37,6 +37,5 @@ model\_connectors
    geojson_modelica_translator.model_connectors.teaser
    geojson_modelica_translator.model_connectors.teaser_ets_coupling
    geojson_modelica_translator.model_connectors.time_series
-   geojson_modelica_translator.model_connectors.time_series_ets_coupling
    geojson_modelica_translator.model_connectors.time_series_mft_ets_coupling
 

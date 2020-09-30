@@ -1,0 +1,38 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/class.rst
+
+LoadsList
+=========
+
+.. currentmodule:: geojson_modelica_translator.geojson_modelica_translator
+
+.. autoclass:: LoadsList
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~LoadsList.__init__
+      ~LoadsList.append
+      ~LoadsList.clear
+      ~LoadsList.copy
+      ~LoadsList.count
+      ~LoadsList.extend
+      ~LoadsList.index
+      ~LoadsList.insert
+      ~LoadsList.pop
+      ~LoadsList.remove
+      ~LoadsList.reverse
+      ~LoadsList.sort
+   
+   
+
+   
+   
+   

@@ -18,7 +18,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="model_connectors" href="geojson_modelica_translator.model_connectors.html" />
+    <link rel="next" title="LoadsList" href="geojson_modelica_translator.geojson_modelica_translator.LoadsList.html" />
     <link rel="prev" title="geojson_modelica_translator" href="geojson_modelica_translator.geojson_modelica_translator.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -31,7 +31,7 @@
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="geojson_modelica_translator.model_connectors.html" title="model_connectors"
+          <a href="geojson_modelica_translator.geojson_modelica_translator.LoadsList.html" title="LoadsList"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="geojson_modelica_translator.geojson_modelica_translator.html" title="geojson_modelica_translator"
@@ -74,13 +74,16 @@
 <tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.from_geojson" title="geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.from_geojson"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_geojson</span></code></a>(filename)</p></td>
 <td><p>Initialize the translator from a GeoJSON file</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.scaffold_directory" title="geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.scaffold_directory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scaffold_directory</span></code></a>(root_dir, project_name[, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.process_loads" title="geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.process_loads"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_loads</span></code></a>(sys_params)</p></td>
+<td><p>Process the loads of the GeoJSON file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.scaffold_directory" title="geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.scaffold_directory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scaffold_directory</span></code></a>(root_dir, project_name[, …])</p></td>
 <td><p>Scaffold out the initial directory and set various helper directories</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.set_system_parameters" title="geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.set_system_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_system_parameters</span></code></a>(sys_params)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.set_system_parameters" title="geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.set_system_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_system_parameters</span></code></a>(sys_params)</p></td>
 <td><p>Read in the system design parameter data</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.to_modelica" title="geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.to_modelica"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_modelica</span></code></a>(project_name, save_dir[, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.to_modelica" title="geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.to_modelica"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_modelica</span></code></a>(project_name, save_dir)</p></td>
 <td><p>Convert the data in the GeoJSON to modelica based-objects</p></td>
 </tr>
 </tbody>
@@ -95,6 +98,23 @@
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>object, GeoJsonModelicaTranslator</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.process_loads">
+<code class="sig-name descname">process_loads</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sys_params</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.process_loads" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process the loads of the GeoJSON file. This combines the GeoJSON object
+with the sys_params object. Each building object contains all the data
+it needs to generate the resulting model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>sys_params</strong> – <p>…</p>
+</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
 </dd>
 </dl>
 </dd></dl>
@@ -129,7 +149,7 @@
 
 <dl class="py method">
 <dt id="geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.to_modelica">
-<code class="sig-name descname">to_modelica</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">project_name</span></em>, <em class="sig-param"><span class="n">save_dir</span></em>, <em class="sig-param"><span class="n">model_connector_str</span><span class="o">=</span><span class="default_value">'TeaserConnector'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.to_modelica" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">to_modelica</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">project_name</span></em>, <em class="sig-param"><span class="n">save_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.geojson_modelica_translator.GeoJsonModelicaTranslator.to_modelica" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert the data in the GeoJSON to modelica based-objects</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -157,8 +177,8 @@
   <p class="topless"><a href="geojson_modelica_translator.geojson_modelica_translator.html"
                         title="previous chapter">geojson_modelica_translator</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="geojson_modelica_translator.model_connectors.html"
-                        title="next chapter">model_connectors</a></p>
+  <p class="topless"><a href="geojson_modelica_translator.geojson_modelica_translator.LoadsList.html"
+                        title="next chapter">LoadsList</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -190,7 +210,7 @@
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="geojson_modelica_translator.model_connectors.html" title="model_connectors"
+          <a href="geojson_modelica_translator.geojson_modelica_translator.LoadsList.html" title="LoadsList"
              >next</a> |</li>
         <li class="right" >
           <a href="geojson_modelica_translator.geojson_modelica_translator.html" title="geojson_modelica_translator"

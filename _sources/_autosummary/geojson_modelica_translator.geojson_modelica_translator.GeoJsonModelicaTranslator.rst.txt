@@ -20,6 +20,7 @@ GeoJsonModelicaTranslator
    
       ~GeoJsonModelicaTranslator.__init__
       ~GeoJsonModelicaTranslator.from_geojson
+      ~GeoJsonModelicaTranslator.process_loads
       ~GeoJsonModelicaTranslator.scaffold_directory
       ~GeoJsonModelicaTranslator.set_system_parameters
       ~GeoJsonModelicaTranslator.to_modelica

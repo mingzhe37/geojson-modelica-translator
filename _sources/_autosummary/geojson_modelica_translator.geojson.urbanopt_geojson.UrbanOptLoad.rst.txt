@@ -1,0 +1,27 @@
+..
+    This file was copied from sphinx/ext/autosummary/templates/autosummary/class.rst
+
+UrbanOptLoad
+============
+
+.. currentmodule:: geojson_modelica_translator.geojson.urbanopt_geojson
+
+.. autoclass:: UrbanOptLoad
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~UrbanOptLoad.__init__
+   
+   
+
+   
+   
+   
