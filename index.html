@@ -216,7 +216,7 @@ will automatically run the models without having to follow the steps below.</p>
 <div class="section" id="release-instructions">
 <h2>Release Instructions<a class="headerlink" href="#release-instructions" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Bump version to &lt;NEW_VERSION&gt; in setup.cfg (use semantic versioning as much as possible).</p></li>
+<li><p>Bump version to &lt;NEW_VERSION&gt; in setup.py (use semantic versioning as much as possible).</p></li>
 <li><p>Run <cite>autopep8</cite> to nicely format the code (or run <cite>pre-commit –all-files</cite>).</p></li>
 <li><p>Create a PR against develop into main.</p></li>
 <li><p>After main branch passes, then merge and checkout the main branch. Build the distribution using the following code:</p></li>
@@ -227,7 +227,7 @@ python setup.py sdist
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Run <cite>git tag &lt;NEW_VERSION&gt;</cite>. (Note that <cite>python setup.py –version</cite> pulls from the latest tag`.)</p></li>
+<li><p>Run <cite>git tag &lt;NEW_VERSION&gt;</cite>. (Note that <cite>python setup.py –version</cite> pulls from the latest tag.)</p></li>
 <li><p>Verify that the files in the dist/* folder have the correct version (no dirty, no sha)</p></li>
 <li><p>Run the following to release</p></li>
 </ul>

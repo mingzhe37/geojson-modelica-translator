@@ -17,7 +17,9 @@
     <script src="../_static/language_data.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="urbanopt_geojson" href="geojson_modelica_translator.geojson.urbanopt_geojson.html" />
+    <link rel="prev" title="schemas" href="geojson_modelica_translator.geojson.schemas.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -28,7 +30,16 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="geojson_modelica_translator.geojson.urbanopt_geojson.html" title="urbanopt_geojson"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="geojson_modelica_translator.geojson.schemas.html" title="schemas"
+             accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">GeoJSON Modelica Translator v0.0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="geojson_modelica_translator.html" >geojson_modelica_translator</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="geojson_modelica_translator.geojson.html" >geojson</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="geojson_modelica_translator.geojson.schemas.html" accesskey="U">schemas</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Schemas</a></li> 
       </ul>
     </div>  
@@ -40,6 +51,60 @@
             
   <div class="section" id="schemas">
 <h1>Schemas<a class="headerlink" href="#schemas" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="geojson_modelica_translator.geojson.schemas.Schemas">
+<em class="property">class </em><code class="sig-prename descclassname">geojson_modelica_translator.geojson.schemas.</code><code class="sig-name descname">Schemas</code><a class="headerlink" href="#geojson_modelica_translator.geojson.schemas.Schemas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class to hold the various schemas</p>
+<dl class="py method">
+<dt id="geojson_modelica_translator.geojson.schemas.Schemas.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.geojson.schemas.Schemas.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load in the schemas</p>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.geojson.schemas.Schemas.__init__" title="geojson_modelica_translator.geojson.schemas.Schemas.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>()</p></td>
+<td><p>Load in the schemas</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#geojson_modelica_translator.geojson.schemas.Schemas.retrieve" title="geojson_modelica_translator.geojson.schemas.Schemas.retrieve"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrieve</span></code></a>(name)</p></td>
+<td><p>name of the schema to retrieve</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geojson_modelica_translator.geojson.schemas.Schemas.validate" title="geojson_modelica_translator.geojson.schemas.Schemas.validate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate</span></code></a>(name, instance)</p></td>
+<td><p>Validate an instance against a loaded schema</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt id="geojson_modelica_translator.geojson.schemas.Schemas.retrieve">
+<code class="sig-name descname">retrieve</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.geojson.schemas.Schemas.retrieve" title="Permalink to this definition">¶</a></dt>
+<dd><p>name of the schema to retrieve</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="geojson_modelica_translator.geojson.schemas.Schemas.validate">
+<code class="sig-name descname">validate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">instance</span></em><span class="sig-paren">)</span><a class="headerlink" href="#geojson_modelica_translator.geojson.schemas.Schemas.validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate an instance against a loaded schema</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – str, name of the schema to validate against</p></li>
+<li><p><strong>instance</strong> – dict, instance to validate</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </div>
 
 
@@ -49,6 +114,12 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="geojson_modelica_translator.geojson.schemas.html"
+                        title="previous chapter">schemas</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="geojson_modelica_translator.geojson.urbanopt_geojson.html"
+                        title="next chapter">urbanopt_geojson</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -79,7 +150,16 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="geojson_modelica_translator.geojson.urbanopt_geojson.html" title="urbanopt_geojson"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="geojson_modelica_translator.geojson.schemas.html" title="schemas"
+             >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">GeoJSON Modelica Translator v0.0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="geojson_modelica_translator.html" >geojson_modelica_translator</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="geojson_modelica_translator.geojson.html" >geojson</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="geojson_modelica_translator.geojson.schemas.html" >schemas</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Schemas</a></li> 
       </ul>
     </div>
